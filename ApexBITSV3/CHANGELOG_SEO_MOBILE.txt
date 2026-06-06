@@ -1,0 +1,32 @@
+ApexBITS SEO/mobile optimized package
+
+Changes made:
+- Added unique SEO title, description, canonical, robots, Open Graph, Twitter card and JSON-LD metadata to HTML pages.
+- Added sitemap.xml, robots.txt and site.webmanifest.
+- Added conservative responsive CSS for mobile navigation, buttons, tables and typography.
+- Fixed visible spelling/formatting consistency: Msc -> M.Sc.; program/programs -> programme/programmes where visible.
+- Preserved the existing page structure, data, navigation and overall visual design.
+
+Deployment note:
+Upload the contents of this folder to Cloudflare Pages. Keep files at the web root so existing relative links continue to work.
+
+Resource folder update:
+- Moved all PDF resources into /resources/.
+- Updated internal PDF links in syllabus, BitsVault, and SBI Scholar loan pages.
+
+
+Mobile cutoff table readability fix:
+- Reduced mobile cutoff table width and first-column width.
+- Kept branch/program names sticky while making year cutoff numbers visible on phones.
+- Increased cutoff number contrast on mobile.
+- Applied the fix to main cutoffs and iteration-wise cutoffs pages.
+
+2026-06-06 - Mobile cutoff table compact-fit update
+- Reduced mobile-only cutoff table font sizes.
+- Tightened mobile column widths for Branch / Program and year cutoff columns.
+- Applied to index.html and iteration-wise-cutoffs.html.
+- Desktop layout and underlying cutoff data unchanged.
+
+2026-06-06 GA4 update:
+- Added Google Analytics 4 tag G-87ZGW28HXJ to all HTML pages.
+- Existing desktop layout unchanged; cutoff table compacting remains mobile-only.

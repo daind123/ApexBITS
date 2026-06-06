@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo-square.png" type="image/png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>BITS Vault | BITS Guides, Scholarships, Branch Preference and Dual Degree Resources</title>
+  <meta name="description" content="BITS Vault collects community resources for BITS fees, scholarships, dual degree guidance, branch transfer, preference filling and syllabus PDFs." />
+  <link rel="canonical" href="https://apexbits.pages.dev/info.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#08090d" />
+  <meta property="og:site_name" content="ApexBits" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BITS Vault | BITS Guides, Scholarships, Branch Preference and Dual Degree Resources" />
+  <meta property="og:description" content="BITS Vault collects community resources for BITS fees, scholarships, dual degree guidance, branch transfer, preference filling and syllabus PDFs." />
+  <meta property="og:url" content="https://apexbits.pages.dev/info.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="BITS Vault | BITS Guides, Scholarships, Branch Preference and Dual Degree Resources" />
+  <meta name="twitter:description" content="BITS Vault collects community resources for BITS fees, scholarships, dual degree guidance, branch transfer, preference filling and syllabus PDFs." />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"BITS Vault","url":"https://apexbits.pages.dev/info.html","description":"BITS Vault collects community resources for BITS fees, scholarships, dual degree guidance, branch transfer, preference filling and syllabus PDFs.","isPartOf":{"@type":"WebSite","name":"ApexBits","url":"https://apexbits.pages.dev/"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --bg: #08090d;
+  --panel: rgba(17, 20, 29, 0.82);
+  --panel-strong: rgba(21, 25, 36, 0.96);
+  --text: #f7f7fb;
+  --muted: #a3a8b8;
+  --faint: #73798b;
+  --line: rgba(255, 255, 255, 0.09);
+  --accent: #aaff32;
+  --accent-2: #7c5cff;
+  --accent-3: #35d8ff;
+  --accent-soft: rgba(170, 255, 50, 0.12);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  --radius: 26px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 8% 7%, rgba(170, 255, 50, 0.10), transparent 27rem),
+    radial-gradient(circle at 90% 24%, rgba(124, 92, 255, 0.16), transparent 30rem),
+    radial-gradient(circle at 50% 110%, rgba(53, 216, 255, 0.08), transparent 31rem),
+    linear-gradient(180deg, #090a0f 0%, #07080c 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.026) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+}
+.glow { position: fixed; width: 360px; height: 360px; border-radius: 999px; filter: blur(70px); opacity: 0.16; pointer-events: none; z-index: -1; }
+.glow-one { background: var(--accent); top: 5%; left: -120px; }
+.glow-two { background: var(--accent-2); right: -140px; top: 34%; }
+.nav {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 0;
+  padding: 12px 14px;
+  position: sticky;
+  top: 14px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10, 12, 18, 0.74);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.brand, .nav-links a, .button { color: var(--text); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 900; letter-spacing: -0.03em; }
+.brand-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 24%, rgba(255,255,255,0.85), transparent 0 9%, transparent 10%),
+    linear-gradient(135deg, var(--accent) 0%, #d9ff63 42%, var(--accent-2) 100%);
+  color: #101406;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 12px 28px rgba(170,255,50,0.22), inset 0 1px 0 rgba(255,255,255,0.42);
+  transform: rotate(-7deg);
+}
+.brand-mark::before { content: ""; position: absolute; inset: 6px; border-radius: 10px; border: 2px solid rgba(8, 9, 13, 0.58); transform: rotate(7deg); }
+.logo-peak { position: absolute; width: 20px; height: 20px; border-left: 5px solid #101406; border-top: 5px solid #101406; transform: translateY(4px) rotate(45deg); border-radius: 3px 0 0 0; }
+.logo-peak::after { content: ""; position: absolute; width: 15px; height: 5px; border-radius: 999px; background: #101406; left: 2px; top: 7px; transform: rotate(-45deg); }
+.logo-spark { position: absolute; right: 8px; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #101406; box-shadow: 0 0 0 3px rgba(16,20,6,0.18); }
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.22), inset 0 0 0 1px rgba(8,9,13,0.08);
+  transform: none;
+  flex: 0 0 auto;
+  padding: 4px;
+}
+.brand-mark::before { display: none; }
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.logo-peak, .logo-spark { display: none !important; }
+
+.nav-links { display: flex; gap: 6px; }
+.nav-links a { padding: 10px 14px; border-radius: 999px; color: var(--muted); font-size: 14px; transition: background 180ms ease, color 180ms ease; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); background: rgba(255,255,255,0.06); }
+main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+.hero { padding: 86px 0 24px; }
+.eyebrow { margin: 0 0 14px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; font-weight: 900; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { max-width: 960px; margin-bottom: 18px; font-size: clamp(46px, 7vw, 86px); line-height: 0.94; letter-spacing: -0.08em; }
+.hero-copy { max-width: 760px; color: var(--muted); font-size: clamp(17px, 2vw, 20px); line-height: 1.7; }
+@media (max-width: 820px) {
+  .nav { align-items: stretch; border-radius: 24px; flex-direction: column; gap: 10px; }
+  .nav-links { display: grid; grid-template-columns: repeat(5, 1fr); }
+  .nav-links a { text-align: center; }
+  .hero { padding-top: 62px; }
+  h1 { font-size: clamp(42px, 12vw, 68px); }
+}
+
+.vault-list { display: grid; gap: 14px; margin: 18px 0 64px; }
+.vault-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  min-height: 118px;
+  padding: 22px 24px;
+  color: var(--text);
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(17, 20, 29, 0.88), rgba(17, 20, 29, 0.58));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+  overflow: hidden;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.vault-row::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-3));
+  opacity: 0.95;
+}
+.vault-row::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -110px;
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  background: rgba(170,255,50,0.08);
+  filter: blur(4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.vault-row:hover { transform: translateY(-2px); border-color: rgba(170,255,50,0.34); background: linear-gradient(135deg, rgba(20, 24, 34, 0.96), rgba(17, 20, 29, 0.70)); }
+.vault-row:hover::after { opacity: 1; transform: scale(1.06); }
+.row-icon {
+  position: relative;
+  z-index: 1;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: #101406;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--accent), #d9ff63);
+  box-shadow: 0 16px 36px rgba(170,255,50,0.16);
+}
+.row-copy { position: relative; z-index: 1; }
+.row-copy h2 { margin: 0 0 8px; font-size: clamp(25px, 3vw, 38px); letter-spacing: -0.06em; }
+.row-copy p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 720px; }
+.row-credit { display: block; margin-top: 10px; color: var(--faint); font-size: 13px; line-height: 1.45; }
+.row-credit a { color: var(--accent); text-decoration: none; }
+.row-credit a:hover { text-decoration: underline; }
+.row-meta { position: relative; z-index: 1; display: flex; align-items: center; gap: 12px; color: var(--accent); font-weight: 900; white-space: nowrap; }
+.row-meta span { padding: 9px 12px; border-radius: 999px; background: rgba(170,255,50,0.10); border: 1px solid rgba(170,255,50,0.20); }
+.coming-soon { opacity: 0.62; pointer-events: none; }
+.coming-soon::before { background: linear-gradient(180deg, var(--faint), rgba(255,255,255,0.14)); }
+.coming-soon .row-icon { background: rgba(255,255,255,0.08); color: var(--muted); box-shadow: none; }
+.coming-soon .row-meta { color: var(--muted); }
+@media (max-width: 720px) {
+  .vault-row { grid-template-columns: 1fr; gap: 14px; padding: 22px; }
+  .row-meta { justify-content: space-between; }
+  .row-icon { width: 52px; height: 52px; }
+}
+
+
+/* SEO and mobile polish: keeps the same visual language while improving small-screen usability. */
+img, svg, video { max-width: 100%; height: auto; }
+input, select, textarea, button { font: inherit; max-width: 100%; }
+.table-wrap { -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; }
+@media (max-width: 640px) {
+  body { -webkit-text-size-adjust: 100%; }
+  .nav {
+    width: min(100% - 20px, 1180px);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .brand { font-size: 15px; line-height: 1.2; }
+  .nav-links {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px;
+  }
+  .nav-links a {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 6px;
+    font-size: 12px;
+    line-height: 1.15;
+  }
+  .shell, .main, main, .vault-shell, .section, .content, .hero {
+    width: min(100% - 24px, 1180px) !important;
+  }
+  .hero { padding-top: 48px; }
+  h1 { font-size: clamp(2.05rem, 11vw, 3.1rem) !important; line-height: 0.98; }
+  h2 { line-height: 1.12; }
+  .hero-copy, .section-copy, .card p, .vault-row p { font-size: 0.98rem; }
+  .hero-actions, .end-actions { gap: 10px; }
+  .hero-actions .button, .end-actions .button, .button { min-height: 44px; }
+  .table-wrap { margin-left: -2px; margin-right: -2px; }
+  th, td { white-space: normal; }
+}
+@media (max-width: 420px) {
+  .nav-links { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .brand-dot { width: 30px; height: 30px; }
+  .button { width: 100%; justify-content: center; }
+}
+
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZGW28HXJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-87ZGW28HXJ');
+</script>
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="ApexBITS home">
+      <span class="brand-mark" aria-hidden="true"><img src="logo-square.png" alt=""></span>
+      <span>ApexBITS</span>
+    </a>
+        <nav class="nav-links" aria-label="Site sections">
+      <a href="index.html">Cutoffs</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="fees.html">Fees</a>
+      <a href="upcoming-bits-events.html">Upcoming</a>
+      <a class="active" href="info.html">Vault</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>BitsVault</h1>
+      <p class="hero-copy">Resources made by the community.</p>
+    </section>
+
+    <section class="vault-list" aria-label="BitsVault pages">
+      <a class="vault-row" href="fees.html" aria-label="Open fee estimates">
+        <div class="row-icon">₹</div>
+        <div class="row-copy">
+          <h2>Fee Reality Check</h2>
+          <p>2026 batch cost estimates for B.E. single degree and M.Sc. dual degree routes, with scholarship scenarios to help you plan the real bill.</p>
+          <span class="row-credit">Credit: u/decent_boy191</span>
+        </div>
+        <div class="row-meta"><span>Open</span> →</div>
+      </a>
+
+      <a class="vault-row" href="sbi-scholar-loans.html" aria-label="Open SBI Scholar Loans">
+        <div class="row-icon">SBI</div>
+        <div class="row-copy">
+          <h2>SBI Scholar Loans</h2>
+          <p>SBI Scholar Loan information for BITS students: List AA coverage, current-rate pointer, covered expenses, document checklist and the downloadable loan form.</p>
+        </div>
+        <div class="row-meta"><span>Open</span> →</div>
+      </a>
+
+      <a class="vault-row" href="upcoming-bits-events.html" aria-label="Open Upcoming BITS Events">
+        <div class="row-icon">📅</div>
+        <div class="row-copy">
+          <h2>Upcoming BITS Events</h2>
+          <p>Admission timeline in simple horizontal bars: iteration announcements, fee-payment deadlines, withdrawal windows, reporting, orientation, registration and class-start dates.</p>
+        </div>
+        <div class="row-meta"><span>Open</span> →</div>
+      </a>
+
+
+      <a class="vault-row" href="resources/BE%20vs%20MSc.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open B.E. vs M.Sc. dual degree PDF">
+        <div class="row-icon">BE</div>
+        <div class="row-copy">
+          <h2>B.E. vs M.Sc. Roadmap</h2>
+          <p>A year-by-year breakdown of the 4-year B.E. route versus the 5-year M.Sc. dual degree route, covering SI, PS-II, thesis choices, and the final-year grind.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/DUAL%20DEGREE.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open dual degree system PDF">
+        <div class="row-icon">DD</div>
+        <div class="row-copy">
+          <h2>Dual Degree Decoder</h2>
+          <p>The full BITS dual-degree system explained: M.Sc. entry branches, first-year allotment logic, B.E. branch outcomes, and approximate CGPA cutoffs.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/some%20faq%20about%20dual%20degree.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open dual degree FAQ PDF">
+        <div class="row-icon">FAQ</div>
+        <div class="row-copy">
+          <h2>Dual Degree Mythbuster</h2>
+          <p>Fast answers to the common dual-degree doubts: CGPA competition, allotment mechanics, branch preference, Hyderabad data, and placement outcomes.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/vertical%20and%20horizontal%20transfer.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open vertical and horizontal transfer PDF">
+        <div class="row-icon">↕</div>
+        <div class="row-copy">
+          <h2>Branch Transfer Playbook</h2>
+          <p>A sharp guide to vertical and horizontal transfers, with recent CGPA trends for B.E. upgrades and M.Sc. branch shifts after first year.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/SCHOLARSHIP%20(MCN%20AND%20MERIT).pdf" target="_blank" rel="noopener noreferrer" aria-label="Open scholarship guide PDF">
+        <div class="row-icon">₹%</div>
+        <div class="row-copy">
+          <h2>Scholarship Survival Kit</h2>
+          <p>Merit and MCN scholarships made simple: eligibility, income rules, document checklist, application route, and recent campus cutoff trends.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/electrical%20branches%20comparison.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open electrical branches comparison PDF">
+        <div class="row-icon">⚡</div>
+        <div class="row-copy">
+          <h2>Phoenix Branch Decoder</h2>
+          <p>A plain-English comparison of EEE, ECE, and ENI, showing what overlaps, what actually differs, and how to use electives strategically.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+
+      <a class="vault-row" href="resources/Branch%20preference.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open branch preference guide PDF">
+        <div class="row-icon">★</div>
+        <div class="row-copy">
+          <h2>Branch Preference Compass</h2>
+          <p>A preference-filling guide for high-stakes choices like Pilani MnC vs Goa/Hyd CSE, Phoenix branches, core B.E., and M.Sc. dual options.</p>
+          <span class="row-credit">Credit: Hardik Singla and Mounish Peela</span>
+        </div>
+        <div class="row-meta"><span>PDF</span> →</div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
